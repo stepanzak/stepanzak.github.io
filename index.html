@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>lang combiner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="general.js"></script>
+</head>
+
+<body>
+    <p>Combined language settings:</p>
+    <div id="langForm">
+        Version:
+        <select id="selectVersion">
+            <option value="1.18.2">1.18</option>
+            <option value="1.17.1">1.17</option>
+            <option value="1.12.2">1.12 (mods)</option>
+            <option value="1.8.9">1.8 (PvP)</option>
+        </select><br>
+        Main language:
+        <select id="selectLang1">
+            <option value="nothing" selected>--select--</option>
+            <option value="af_za">Afrikaans (Suid-Afrika)</option>
+            <option value="sq_al">Albanian</option>
+            <option value="en_us">American English</option>
+            <option value="esan">Andalusian</option>
+            <option value="ar_sa">Arabic</option>
+            <option value="es_ar">Argentinian Spanish</option>
+            <option value="hy_am">Armenian</option>
+            <option value="ast_es">Asturian</option>
+            <option value="en_au">Australian English</option>
+            <option value="de_at">Austrian German</option>
+            <option value="az_az">Azerbaijani</option>
+            <option value="ba_ru">Bashkir</option>
+            <option value="eu_es">Basque</option>
+            <option value="bar">Bavarian</option>
+            <option value="be_by">Belarusian</option>
+            <option value="bs_ba">Bosnian</option>
+            <option value="brb">Brabantian</option>
+            <option value="pt_br">Brazilian Portuguese</option>
+            <option value="br_fr">Breton</option>
+            <option value="en_gb">British English</option>
+            <option value="bg_bg">Bulgarian</option>
+            <option value="en_ca">Canadian English</option>
+            <option value="fr_ca">Canadian French</option>
+            <option value="ca_es">Catalan</option>
+            <option value="es_cl">Chilean Spanish</option>
+            <option value="zh_cn">Chinese Simplified (China; Mandarin)</option>
+            <option value="zh_hk">Chinese Traditional (Hong Kong; Mix)</option>
+            <option value="zh_tw">Chinese Traditional (Taiwan; Mandarin)</option>
+            <option value="lzh">Classical Chinese</option>
+            <option value="kw_gb">Cornish</option>
+            <option value="hr_hr">Croatian</option>
+            <option value="cs_cz">Czech</option>
+            <option value="da_dk">Danish</option>
+            <option value="nl_nl">Dutch</option>
+            <option value="nl_be">Dutch, Flemish</option>
+            <option value="enws">Early Modern English</option>
+            <option value="fra_de">East Franconian</option>
+            <option value="es_ec">Ecuadorian Spanish</option>
+            <option value="ovd">Elfdalian</option>
+            <option value="eo_uy">Esperanto</option>
+            <option value="et_ee">Estonian</option>
+            <option value="fo_fo">Faroese</option>
+            <option value="fil_ph">Filipino</option>
+            <option value="fi_fi">Finnish</option>
+            <option value="fr_fr">French</option>
+            <option value="fy_nl">Frisian</option>
+            <option value="fur_it">Friulian</option>
+            <option value="gl_es">Galician</option>
+            <option value="ka_ge">Georgian</option>
+            <option value="de_de">German</option>
+            <option value="el_gr">Greek</option>
+            <option value="haw_us">Hawaiian</option>
+            <option value="he_il">Hebrew</option>
+            <option value="hi_in">Hindi</option>
+            <option value="hu_hu">Hungarian</option>
+            <option value="is_is">Icelandic</option>
+            <option value="io_en">Ido</option>
+            <option value="ig_ng">Igbo</option>
+            <option value="id_id">Indonesian</option>
+            <option value="isv">Interslavic</option>
+            <option value="ga_ie">Irish</option>
+            <option value="it_it">Italian</option>
+            <option value="ja_jp">Japanese</option>
+            <option value="kn_in">Kannada</option>
+            <option value="kk_kz">Kazakh</option>
+            <option value="tlh_aa">Klingon</option>
+            <option value="ko_kr">Korean</option>
+            <option value="ksh">Kölsch/Ripuarian</option>
+            <option value="la_la">Latin</option>
+            <option value="lv_lv">Latvian</option>
+            <option value="li_li">Limburgish</option>
+            <option value="lt_lt">Lithuanian</option>
+            <option value="jbo_en">Lojban</option>
+            <option value="lol_us">LOLCAT</option>
+            <option value="lmo">Lombard</option>
+            <option value="nds_de">Low German</option>
+            <option value="lb_lu">Luxembourgish</option>
+            <option value="mk_mk">Macedonian</option>
+            <option value="ms_my">Malay</option>
+            <option value="mt_mt">Maltese</option>
+            <option value="es_mx">Mexican Spanish</option>
+            <option value="enp">Modern English minus borrowed words</option>
+            <option value="mn_mn">Mongolian</option>
+            <option value="en_nz">New Zealand English</option>
+            <option value="se_no">Northern Sami</option>
+            <option value="no_no">Norwegian Bokmål</option>
+            <option value="nn_no">Norwegian Nynorsk</option>
+            <option value="oc_fr">Occitan</option>
+            <option value="fa_ir">Persian</option>
+            <option value="en_pt">Pirate English</option>
+            <option value="pl_pl">Polish</option>
+            <option value="pt_pt">Portuguese</option>
+            <option value="qya_aa">Quenya (Form of Elvish from LOTR)</option>
+            <option value="ro_ro">Romanian</option>
+            <option value="ru_ru">Russian</option>
+            <option value="rpr">Russian (Pre-revolutionary)</option>
+            <option value="gd_gb">Scottish Gaelic</option>
+            <option value="sr_sp">Serbian (Cyrillic/Latin)</option>
+            <option value="szl">Silesian</option>
+            <option value="sk_sk">Slovak</option>
+            <option value="sl_si">Slovenian</option>
+            <option value="so_so">Somali</option>
+            <option value="es_es">Spanish</option>
+            <option value="sv_se">Swedish</option>
+            <option value="de_ch">Swiss German</option>
+            <option value="tl_ph">Tagalog</option>
+            <option value="ta_in">Tamil</option>
+            <option value="tt_ru">Tatar</option>
+            <option value="th_th">Thai</option>
+            <option value="tok">Toki Pona</option>
+            <option value="tr_tr">Turkish</option>
+            <option value="uk_ua">Ukrainian</option>
+            <option value="sxu">Upper Saxon German</option>
+            <option value="en_ud">Upside down English</option>
+            <option value="es_uy">Uruguayan Spanish</option>
+            <option value="val_es">Valencian</option>
+            <option value="vec_it">Venetian</option>
+            <option value="es_ve">Venezuelan Spanish</option>
+            <option value="vi_vn">Vietnamese</option>
+            <option value="cy_gb">Welsh</option>
+            <option value="yi_de">Yiddish</option>
+            <option value="yo_ng">Yoruba</option>
+        </select><br>
+        Secondary language:
+        <select id="selectLang2">
+            <option value="nothing" selected>--select--</option>
+            <option value="af_za">Afrikaans (Suid-Afrika)</option>
+            <option value="sq_al">Albanian</option>
+            <option value="en_us">American English</option>
+            <option value="esan">Andalusian</option>
+            <option value="ar_sa">Arabic</option>
+            <option value="es_ar">Argentinian Spanish</option>
+            <option value="hy_am">Armenian</option>
+            <option value="ast_es">Asturian</option>
+            <option value="en_au">Australian English</option>
+            <option value="de_at">Austrian German</option>
+            <option value="az_az">Azerbaijani</option>
+            <option value="ba_ru">Bashkir</option>
+            <option value="eu_es">Basque</option>
+            <option value="bar">Bavarian</option>
+            <option value="be_by">Belarusian</option>
+            <option value="bs_ba">Bosnian</option>
+            <option value="brb">Brabantian</option>
+            <option value="pt_br">Brazilian Portuguese</option>
+            <option value="br_fr">Breton</option>
+            <option value="en_gb">British English</option>
+            <option value="bg_bg">Bulgarian</option>
+            <option value="en_ca">Canadian English</option>
+            <option value="fr_ca">Canadian French</option>
+            <option value="ca_es">Catalan</option>
+            <option value="es_cl">Chilean Spanish</option>
+            <option value="zh_cn">Chinese Simplified (China; Mandarin)</option>
+            <option value="zh_hk">Chinese Traditional (Hong Kong; Mix)</option>
+            <option value="zh_tw">Chinese Traditional (Taiwan; Mandarin)</option>
+            <option value="lzh">Classical Chinese</option>
+            <option value="kw_gb">Cornish</option>
+            <option value="hr_hr">Croatian</option>
+            <option value="cs_cz">Czech</option>
+            <option value="da_dk">Danish</option>
+            <option value="nl_nl">Dutch</option>
+            <option value="nl_be">Dutch, Flemish</option>
+            <option value="enws">Early Modern English</option>
+            <option value="fra_de">East Franconian</option>
+            <option value="es_ec">Ecuadorian Spanish</option>
+            <option value="ovd">Elfdalian</option>
+            <option value="eo_uy">Esperanto</option>
+            <option value="et_ee">Estonian</option>
+            <option value="fo_fo">Faroese</option>
+            <option value="fil_ph">Filipino</option>
+            <option value="fi_fi">Finnish</option>
+            <option value="fr_fr">French</option>
+            <option value="fy_nl">Frisian</option>
+            <option value="fur_it">Friulian</option>
+            <option value="gl_es">Galician</option>
+            <option value="ka_ge">Georgian</option>
+            <option value="de_de">German</option>
+            <option value="el_gr">Greek</option>
+            <option value="haw_us">Hawaiian</option>
+            <option value="he_il">Hebrew</option>
+            <option value="hi_in">Hindi</option>
+            <option value="hu_hu">Hungarian</option>
+            <option value="is_is">Icelandic</option>
+            <option value="io_en">Ido</option>
+            <option value="ig_ng">Igbo</option>
+            <option value="id_id">Indonesian</option>
+            <option value="isv">Interslavic</option>
+            <option value="ga_ie">Irish</option>
+            <option value="it_it">Italian</option>
+            <option value="ja_jp">Japanese</option>
+            <option value="kn_in">Kannada</option>
+            <option value="kk_kz">Kazakh</option>
+            <option value="tlh_aa">Klingon</option>
+            <option value="ko_kr">Korean</option>
+            <option value="ksh">Kölsch/Ripuarian</option>
+            <option value="la_la">Latin</option>
+            <option value="lv_lv">Latvian</option>
+            <option value="li_li">Limburgish</option>
+            <option value="lt_lt">Lithuanian</option>
+            <option value="jbo_en">Lojban</option>
+            <option value="lol_us">LOLCAT</option>
+            <option value="lmo">Lombard</option>
+            <option value="nds_de">Low German</option>
+            <option value="lb_lu">Luxembourgish</option>
+            <option value="mk_mk">Macedonian</option>
+            <option value="ms_my">Malay</option>
+            <option value="mt_mt">Maltese</option>
+            <option value="es_mx">Mexican Spanish</option>
+            <option value="enp">Modern English minus borrowed words[1]</option>
+            <option value="mn_mn">Mongolian</option>
+            <option value="en_nz">New Zealand English</option>
+            <option value="se_no">Northern Sami</option>
+            <option value="no_no">Norwegian Bokmål</option>
+            <option value="nn_no">Norwegian Nynorsk</option>
+            <option value="oc_fr">Occitan</option>
+            <option value="fa_ir">Persian</option>
+            <option value="en_pt">Pirate English</option>
+            <option value="pl_pl">Polish</option>
+            <option value="pt_pt">Portuguese</option>
+            <option value="qya_aa">Quenya (Form of Elvish from LOTR)</option>
+            <option value="ro_ro">Romanian</option>
+            <option value="ru_ru">Russian</option>
+            <option value="rpr">Russian (Pre-revolutionary)</option>
+            <option value="gd_gb">Scottish Gaelic</option>
+            <option value="sr_sp">Serbian (Cyrillic/Latin)</option>
+            <option value="szl">Silesian</option>
+            <option value="sk_sk">Slovak</option>
+            <option value="sl_si">Slovenian</option>
+            <option value="so_so">Somali</option>
+            <option value="es_es">Spanish</option>
+            <option value="sv_se">Swedish</option>
+            <option value="de_ch">Swiss German</option>
+            <option value="tl_ph">Tagalog</option>
+            <option value="ta_in">Tamil</option>
+            <option value="tt_ru">Tatar</option>
+            <option value="th_th">Thai</option>
+            <option value="tok">Toki Pona</option>
+            <option value="tr_tr">Turkish</option>
+            <option value="uk_ua">Ukrainian</option>
+            <option value="sxu">Upper Saxon German</option>
+            <option value="en_ud">Upside down English</option>
+            <option value="es_uy">Uruguayan Spanish</option>
+            <option value="val_es">Valencian</option>
+            <option value="vec_it">Venetian</option>
+            <option value="es_ve">Venezuelan Spanish</option>
+            <option value="vi_vn">Vietnamese</option>
+            <option value="cy_gb">Welsh</option>
+            <option value="yi_de">Yiddish</option>
+            <option value="yo_ng">Yoruba</option>
+        </select><br>
+        Color of main language:
+        <select id="colorOfMainLang">
+            <option value="" selected>default</option>
+            <option value="§4">dark red</option>
+            <option value="§c">red</option>
+            <option value="§6">gold</option>
+            <option value="§e">yellow</option>
+            <option value="§2">dark green</option>
+            <option value="§a">green</option>
+            <option value="§b">aqua</option>
+            <option value="§3">dark aqua</option>
+            <option value="§1">dark blue</option>
+            <option value="§9">blue</option>
+            <option value="§d">light purple</option>
+            <option value="§5">dark purple</option>
+            <option value="§f">white</option>
+            <option value="§7">gray</option>
+            <option value="§8">dark gray</option>
+            <option value="§0">black</option>
+        </select><br>
+        Color of secondary language:
+        <select id="colorOfSecondaryLang">
+            <option value="" selected>default</option>
+            <option value="§4">dark red</option>
+            <option value="§c">red</option>
+            <option value="§6">gold</option>
+            <option value="§e">yellow</option>
+            <option value="§2">dark green</option>
+            <option value="§a">green</option>
+            <option value="§b">aqua</option>
+            <option value="§3">dark aqua</option>
+            <option value="§1">dark blue</option>
+            <option value="§9">blue</option>
+            <option value="§d">light purple</option>
+            <option value="§5">dark purple</option>
+            <option value="§f">white</option>
+            <option value="§7">gray</option>
+            <option value="§8">dark gray</option>
+            <option value="§0">black</option>
+        </select><br>Separator between languages:
+        <input type="text" id="separator" size="1" value="/" maxlength="5">Color:
+        <select id="colorOfSeparator">
+            <option value="" selected>default</option>
+            <option value="§4">dark red</option>
+            <option value="§c">red</option>
+            <option value="§6">gold</option>
+            <option value="§e">yellow</option>
+            <option value="§2">dark green</option>
+            <option value="§a">green</option>
+            <option value="§b">aqua</option>
+            <option value="§3">dark aqua</option>
+            <option value="§1">dark blue</option>
+            <option value="§9">blue</option>
+            <option value="§d">light purple</option>
+            <option value="§5">dark purple</option>
+            <option value="§f">white</option>
+            <option value="§7">gray</option>
+            <option value="§8">dark gray</option>
+            <option value="§0">black</option>
+        </select><br>
+        <input type="checkbox">
+        <input type="range">
+    </div>
+
+    <!-- resource pack settings -->
+    <br><br>
+    <p>Resourcepack settings:</p>
+    <div id="packForm">
+
+        <label for="packName">Resourcepack name:</label>
+        <input type="text" id="packName" size="30" maxlength="20" placeholder="Steve's pack"><br>
+
+        <label for="langName">Name of the language (in settings)</label>
+        <input type="text" id="langName" maxlength="42" placeholder="english-french language">
+        <span id="langNameSpan">0/42</span><br>
+
+        <label for="regionName">Region name (in settings)</label>
+        <input type="text" id="regionName" maxlength="42" placeholder="London-Paris">
+        <span id="regionNameSpan">0/42</span><br>
+
+        <label for="packDescription">Resourcepack description</label>
+        <input type="text" id="packDescription" size="60" maxlength="50"
+            placeholder="Resourcepack to learn french language, made with langcombiner."><br>
+
+        <button id="downloadButton">download</button>
+        <p>BE SURE TO DOWNLOAD BOTH LANG FILE AND INSTALLER TO THE SAME FOLDER!</p>
+    </div>
+    <div id="how-to-use">
+        <h2>How to use:</h2>
+        <mark>IF YOU ARE SWITCHING TO ANOTHER VERSION, BE SURE TO DISABLE THE RESOURCEPACK, OR SOME SERVER MAY KICK YOU!</mark>
+        <img src="images/flint_and_steel.png" width="40%" height="40%" alt="flint and steel">
+        <ol class="tutorial-list">
+            <li>Select the languages you want to combine.
+            
+            <li>Select the main language, whole game will be in this language.
+            <li>Select the secondary language, all items will be translated into this language.
+            <li>Select the separator between languages.
+            <li>Select the color of main language.
+            <li>Select the color of secondary language.
+            <li>Select the color of separator.
+            <li>Select the name of the resource pack, the name of the language and the name of the region.
+            <li>Enter the description of the resource pack, this will be displayed in Minecraft settings.
+            <li>Click on the download button. <strong>ENABLE AUTOMATIC DOWNLOADING FOR THIS SITE IN YOUR BROWSER!</strong>
+            <li>Download the resource pack and the installer. You can download it to any folder in your PC, but <strong>be sure to download both files into the same folder.</strong>
+            <li>Open the installer, windows will probably warn you about that i am not trusted source, but it's safe to continue. You can view code of this file and you can see that there is nothing dangerous, just moving resource pack files 😇.<br>
+                <img src="images/more_info.png" width="40%" height="40%" alt="more info"><img src="images/run_anyway.png" width="20%" height="20%" alt="run anyway">
+            <li>Open Minecraft, go to the settings, resource packs and you will see your pack on the left. Enable it.
+            <li>Now, go to the language settings, find your generated language and select it.<strong>I don't know why, but your custom language will NOT be sorted by alphabet like other languages</strong>, so you have to be a little detective.
+            <li>Done! Now, you can play and learn in the same time 🎉
+        </ol>
+    </div>
+    <script src="lang_combiner.js"></script>
+</body>
+</html>
