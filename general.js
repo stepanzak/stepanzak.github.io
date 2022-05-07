@@ -11,14 +11,3 @@ function download(filename, text) {
 
     document.body.removeChild(element);
 }
-
-//remove ad
-function removeAd() {
-    setTimeout(() => {
-        let divy = document.querySelectorAll('div')
-        divy[divy.length - 1].remove()
-        divy[divy.length - 2].remove()
-    }, 1000);
-}
-
-//removeAd()
