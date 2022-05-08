@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <p>Combined language settings:</p>
+    <h2>Combined language settings:</h2>
     <div id="langForm">
         Version:
         <select id="selectVersion">
@@ -20,7 +20,7 @@
             <option value="1.12.2">1.12 (mods)</option>
             <option value="1.8.9">1.8 (PvP)</option>
         </select><br>
-        Main language:
+        <label for="selectLang1">Main language:</label>
         <select id="selectLang1">
             <option value="nothing" selected>--select--</option>
             <option value="af_za">Afrikaans (Suid-Afrika)</option>
@@ -146,7 +146,7 @@
             <option value="yi_de">Yiddish</option>
             <option value="yo_ng">Yoruba</option>
         </select><br>
-        Secondary language:
+        <label for="selectLang2">Secondary language:</label>
         <select id="selectLang2">
             <option value="nothing" selected>--select--</option>
             <option value="af_za">Afrikaans (Suid-Afrika)</option>
@@ -272,7 +272,7 @@
             <option value="yi_de">Yiddish</option>
             <option value="yo_ng">Yoruba</option>
         </select><br>
-        Color of main language:
+        <label for="colorOfMainLang">Color of main language:</label>
         <select id="colorOfMainLang">
             <option value="" selected>default</option>
             <option value="§4">dark red</option>
@@ -292,7 +292,7 @@
             <option value="§8">dark gray</option>
             <option value="§0">black</option>
         </select><br>
-        Color of secondary language:
+        <label for="colorOfSecondaryLang">Color of secondary language:</label>
         <select id="colorOfSecondaryLang">
             <option value="" selected>default</option>
             <option value="§4">dark red</option>
@@ -311,8 +311,10 @@
             <option value="§7">gray</option>
             <option value="§8">dark gray</option>
             <option value="§0">black</option>
-        </select><br>Separator between languages:
-        <input type="text" id="separator" size="1" value="/" maxlength="5">Color:
+        </select><br>
+        <label for="separator">Separator between languages:</label>
+        <input type="text" id="separator" size="1" value="/" maxlength="5">
+        <label for="colorOfSeparator">Color:</label>
         <select id="colorOfSeparator">
             <option value="" selected>default</option>
             <option value="§4">dark red</option>
@@ -338,7 +340,7 @@
 
     <!-- resource pack settings -->
     <br><br>
-    <p>Resourcepack settings:</p>
+    <h2>Resourcepack settings:</h2>
     <div id="packForm">
 
         <label for="packName">Resourcepack name:</label>
@@ -361,7 +363,7 @@
     </div>
     <div id="how-to-use">
         <h2>How to use:</h2>
-        <mark>IF YOU ARE SWITCHING TO ANOTHER VERSION, BE SURE TO DISABLE THE RESOURCEPACK, OR SOME SERVER MAY KICK YOU!</mark>
+        <mark>IF YOU HAVE PROBLEMS WITH SOME SERVERS (THEY CAN KICK YOU FOR EXAMPLE), DISABLE THE RESOURCE PACK AND LANGUAGE IN SETTINGS.</mark>
         <img src="images/flint_and_steel.png" width="40%" height="40%" alt="flint and steel">
         <ol class="tutorial-list">
             <li>Select the languages you want to combine.

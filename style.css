@@ -1,54 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 
+:root {
+    --color-primary: hsl(210, 100%, 39%);
+    --color-secondary: hsl(20, 100%, 50%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-}
-button {
-    background: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    color: #333;
+    color: hsl(0, 0%, 0%);
     font-size: 14px;
     font-weight: bold;
-    margin: 0;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
-    transition: all 0.15s linear;
-    width: auto;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+button {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--color-secondary);
+    border: 3px solid hsl(0, 0%, 0%);
+    border-radius: 100px;
+    font-weight: bold;
+    box-shadow: 5px 5px hsl(0, 0%, 0%);
+}
+
+button:active {
+    position: relative;
+    top: 2px;
+}
+
+button:hover {
+    box-shadow: 5px 5px hsla(0, 0%, 0%, 0.279);
+    padding: 12px 22px;
+    margin: 8px;
+    background-color: hsl(20, 100%, 45%);
 }
 
 input[type="text"] {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    color: #333;
+    background-color: var(--color-secondary);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px #000000;
     font-size: 14px;
     font-weight: bold;
-    margin: 0;
+    margin: 5px 10px 5px 5px;
     padding: 5px 10px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
     transition: all 0.15s linear;
     width: auto;
 }
 
+::placeholder {
+    color: hsl(0, 0%, 20%);
+}
+
 select {
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    color: #333;
+    background-color: var(--color-secondary);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-shadow: 5px 5px #000000;
     font-size: 14px;
     font-weight: bold;
-    margin: 0;
+    margin: 5px 10px 5px 5px;
     padding: 5px 10px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
     transition: all 0.15s linear;
     width: auto;
 }
@@ -59,18 +82,6 @@ p {
     margin: 0;
     padding: 5px 10px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
-    transition: all 0.15s linear;
-    width: auto;
-}
-
-div {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 5px 10px;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
     transition: all 0.15s linear;
     width: auto;
 }
@@ -82,7 +93,10 @@ div {
     margin-left: 1rem;
     padding: 5px 10px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
     transition: all 0.15s linear;
     width: auto;
+}
+
+h2 {
+    font-size: 24px;
 }
